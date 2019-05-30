@@ -24,7 +24,8 @@
         :selectedId.sync="activeNavItemId"
       />
     </div>
-    <div class="content">
+    <!-- main not supported in IE -->
+    <div data-fd-main-content class="content">
       <router-view />
     </div>
   </div>

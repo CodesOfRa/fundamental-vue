@@ -10,7 +10,7 @@ export const DocsRouter = new Router({
   scrollBehavior() {
     return new Promise(resolve => {
       window.requestAnimationFrame(() => {
-        const main = window.document.querySelector("main");
+        const main = window.document.querySelector("[data-fd-main-content]");
         if (main != null) {
           main.scrollIntoView(/* alignToTop */ true);
         }
